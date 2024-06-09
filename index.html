@@ -18,18 +18,27 @@
         background-color: rgba(255, 255, 255, 0.09);
         backdrop-filter: blur(21px);
       }
-
       .bg-blur {
         backdrop-filter: blur(
           4px
         ); /* Ajusta el valor para un desenfoque diminuto */
         background-color: rgba(0, 0, 0, 0.3); /* Fondo translúcido */
       }
+      .min-h-screen {
+        min-height: 100vh;
+      }
+
+      .parallax {
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+      }
     </style>
   </head>
-  <body class="overflow-x-hidden">
+  <body class="overflow-x-hidden bg-[#212828] flex flex-col min-h-screen">
     <section
-      class="bg-[url('https://www.gesproyect.co/wp-content/uploads/2023/09/trabajadores-construccion-al-atardecer-1.jpg')] h-screen w-screen bg-no-repeat bg-cover"
+      class="bg-[url('https://www.gesproyect.co/wp-content/uploads/2023/09/trabajadores-construccion-al-atardecer-1.jpg')] h-screen w-screen bg-no-repeat bg-cover parallax"
       style="background-position: center top -100px"
     >
       <nav
@@ -50,7 +59,7 @@
       </div>
     </section>
 
-    <section class="h-screen bg-[#212828] px-28 py-12">
+    <section class="flex-grow px-28 py-12">
       <article class="text-white">
         <h2 class="text-4xl font-bold">Spark Safe Systems</h2>
         <p class="text-2xl">
@@ -59,7 +68,7 @@
           los ecosistemas terrestres. Nuestra misión es desarrollar soluciones
           tecnológicas que no solo salvaguarden la biodiversidad de nuestro
           planeta, sino que también promuevan un futuro más sostenible y
-          armonioso para todas las formas de vida.En Spark Safe Systems,
+          armonioso para todas las formas de vida. En Spark Safe Systems,
           entendemos la importancia crítica de mantener el equilibrio ecológico
           y la salud de nuestros entornos naturales. Por eso, nos esforzamos en
           diseñar sistemas que integren la última tecnología en monitoreo
@@ -75,11 +84,65 @@
           Con este proyecto, no solo buscamos salvaguardar la flora y fauna, sino también proporcionar una herramienta valiosa para las comunidades que viven en armonía con el bosque. Estamos comprometidos con la preservación de nuestros bosques y con la innovación que nos permite cuidar de nuestro planeta de manera más inteligente y sostenible -->
         </p>
       </article>
-      <article class="grid grid-cols-10 gap-4 pt-10">
-        <div class="col-span-6 bg-blue-500 h-20">Div 1</div>
-        <div class="col-span-4 bg-red-500 h-20">Div 2</div>
+      <article class="grid grid-cols-10 gap-4 my-10">
+        <div
+          class="col-span-6 p-4 text-white text-2xl flex items-center flex-col"
+        >
+          <h2 class="text-4xl font-semibold pb-1 self-start">
+            ¿Por qué Spark Safe Systems?
+          </h2>
+
+          "Spark Safe Systems" no es solo un nombre, es una promesa de
+          innovación y seguridad en la protección de nuestros valiosos
+          ecosistemas terrestres. La chispa de la creatividad y la tecnología se
+          une con el compromiso de salvaguardar la naturaleza, creando sistemas
+          que no solo detectan y combaten incendios forestales, sino que también
+          previenen su ocurrencia a través de la gestión inteligente del
+          entorno. Nuestra empresa se enorgullece de ser pionera en el uso de
+          tecnologías de vanguardia para la conservación ambiental. Con cada
+          sistema que diseñamos, buscamos equilibrar la necesidad humana de
+          progreso con la responsabilidad de preservar la biodiversidad. En
+          "Spark Safe Systems", cada proyecto es un paso hacia un futuro más
+          sostenible, donde la tecnología y el medio ambiente coexisten en
+          armonía. Creemos firmemente que la clave para un planeta más saludable
+          y seguro reside en la innovación consciente y el desarrollo
+          sostenible. Por eso, "Spark Safe Systems" no es solo nuestro nombre;
+          es nuestra visión, nuestra misión y nuestro compromiso con el mundo.
+        </div>
+        <div class="col-span-4 p-4">
+          <picture>
+            <img
+              src="img/inteligencia-artificial-conservacion-especies-en-peligro-de-extincion.webp"
+              alt=""
+              class="h-full w-full"
+            />
+          </picture>
+        </div>
       </article>
     </section>
+
+    <footer class="bg-[#3E4949] text-white py-6 mt-auto">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <h4 class="text-2xl font-bold">Spark Safe Systems</h4>
+            <p class="text-xl">Protegiendo el futuro, hoy.</p>
+          </div>
+          <div class="flex gap-10">
+            <div>
+              <h5 class="text-xl font-bold">Contacto</h5>
+              <a href="https://www.instagram.com/sprk.sys/"
+                ><p class="text-lg">Instagram</p></a
+              >
+              <p class="text-lg">Correo: contact.sparksystems@gmail.com</p>
+              <p class="text-lg">Teléfono: +123 456 7890</p>
+              <p class="text-lg">Estamos atentos a tus comentarios</p>
+            </div>
+            <img src="img/logov.jpeg" class="h-40 w-40" />
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="javiscript.js"></script>
