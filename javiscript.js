@@ -20,3 +20,8 @@ var typyingEffect = new Typed(".multiText", {
   backSpeed: 100,
   backDelay: 3000,
 });
+
+function enviarCorreo() {
+  window.location.href =
+    "mailto:contact.sparksystems@gmail.com?subject=Cotización de Flame Guard&body=Me gustaría recibir más información sobre este producto.";
+}
