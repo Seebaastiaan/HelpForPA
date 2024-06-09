@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="pag2.css">
+    <link rel="icon" href="img/fondont.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCTOS</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SS</a>
+
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="">QUIENES SOMOS?</a></li>
+        </ul>
+    </header>
+
+        <div class="card">
+            <img class="product-image" src="img/robom.jpg" alt="Producto">
+            <p class="description">Flame Guard es una solución tecnológica de vanguardia diseñada para enfrentar los desafíos de los incendios forestales con una eficiencia y seguridad sin precedentes. Este robot teledirigido cuenta con un sistema de control remoto avanzado que permite a los operadores dirigirlo desde una distancia segura, evitando así los riesgos asociados con las operaciones en zonas de fuego.
+            </p>
+             <p class="description">
+                Su sistema de extinción incorpora tanques de agua y retardantes de fuego, capaces de ser disparados con gran precisión para sofocar las llamas rápidamente.
+             </p>  
+                <p class="description">
+                    Con su diseño compacto y ágil, Flame Guard puede acceder a áreas donde los vehículos tradicionales no pueden llegar, proporcionando una cobertura integral en la lucha contra los incendios. Es la herramienta ideal para organizaciones de protección civil y bomberos, ofreciendo una nueva dimensión en la prevención y control de incendios forestales.      
+                </p>
+                <p class="description">
+                    Disponible para su distribución en Latinoamérica y a nivel mundial, Flame Guard representa un gran avance en la protección del medio ambiente y la seguridad de las comunidades afectadas por incendios forestales.
+                </p>
+                
+            
+            <button class="btn-cotizar" onclick="enviarCorreo()">Cotizar</button>
+        </div>
+    
+        <script>
+            function enviarCorreo() {
+                window.location.href = "mailto:contact.sparksystems@gmail.com?subject=Cotización de Flame Guard&body=Me gustaría recibir más información sobre este producto.";
+            }
+        </script>
+
+    
+    
+
+
+    <script>
+        const images = document.querySelectorAll('.image');
+        let currentIndex = 0;
+        let intervalId;
+
+        function autoRotate() {
+            images[currentIndex].style.transform = 'scale(1)';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.transform = 'scale(1.1)';
+        }
+
+        function stopRotation() {
+            clearInterval(intervalId);
+        }
+
+        images.forEach((image, index) => {
+            image.style.setProperty('--i', index);
+            image.addEventListener('click', () => {
+                images[currentIndex].style.transform = 'scale(1)';
+                currentIndex = index;
+                images[currentIndex].style.transform = 'scale(1.1)';
+                stopRotation();
+            });
+        });
+
+        intervalId = setInterval(autoRotate, 3000); // Cambia de imagen cada 3 segundos (ajusta según tus preferencias)
+    </script>
+</body>
+</html>

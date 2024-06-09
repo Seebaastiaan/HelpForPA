@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/fondont.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="inicio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkSafeSystems</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">SS</a>
+
+        <ul>
+            <li><a href="">QUIENES SOMOS?</a></li>
+            <li><a href="productos.html">PRODUCTOS</a></li>
+        </ul>
+    </header>
+
+
+    <div class="parallax section1">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+            <h1 class="title">   SPARK SAFE SYSTEMS</h1>
+            <div class="content audi">
+                <h2>Encendiendo la <span class="multiText"></span>, protegiendo el futuro.</h2>
+            </div>
+    </div>
+
+    
+    <div class="black-section">
+        <!--
+            <div class="image-block1">
+            <img class="image" src="img/fondopantalla.jpg" alt="no leer !!!!">
+            </div>
+        --> 
+        <div class="text-block1">
+        <h1>Spark Safe Systems</h1>
+            <br><br>
+            <p>Bienvenidos a Spark Safe Systems, una empresa innovadora dedicada a la creación de sistemas avanzados para la protección y preservación de los ecosistemas terrestres. Nuestra misión es desarrollar soluciones tecnológicas que no solo salvaguarden la biodiversidad de nuestro planeta, sino que también promuevan un futuro más sostenible y armonioso para todas las formas de vida.En Spark Safe Systems, entendemos la importancia crítica de mantener el equilibrio ecológico y la salud de nuestros entornos naturales. 
+                Por eso, nos esforzamos en diseñar sistemas que integren la última tecnología en monitoreo ambiental, análisis de datos y automatización para asegurar que los ecosistemas terrestres puedan florecer.
+                Nuestro equipo de expertos en ecología, ingeniería y ciencia de datos trabaja incansablemente para ofrecer soluciones que sean eficaces, eficientes y, sobre todo, respetuosas con el medio ambiente. Con Spark Safe Systems, el futuro de los ecosistemas terrestres está en buenas manos. 🌱🌎
+            </p>
+            <br>
+            <p>
+                En el corazón de los bosques, donde la naturaleza teje su tapiz de vida, nuestro equipo de ingenieros y ambientalistas está desarrollando un proyecto revolucionario: un robot diseñado específicamente para combatir incendios en zonas boscosas. Este autómata, una maravilla de la tecnología moderna, está equipado con sensores de última generación y sistemas de extinción de fuegos avanzados, permitiéndole navegar con precisión a través del terreno irregular y actuar rápidamente ante la presencia de llamas.
+                El robot, FlameGuard, es el resultado de años de investigación y desarrollo, con el objetivo de ofrecer una solución eficaz y segura para proteger nuestros preciados ecosistemas forestales. Su diseño robusto y su capacidad para operar de manera autónoma lo hacen ideal para llegar a áreas que serían inaccesibles o peligrosas para los bomberos humanos.
+                Con este proyecto, no solo buscamos salvaguardar la flora y fauna, sino también proporcionar una herramienta valiosa para las comunidades que viven en armonía con el bosque. Estamos comprometidos con la preservación de nuestros bosques y con la innovación que nos permite cuidar de nuestro planeta de manera más inteligente y sostenible
+            </p>
+            <p> 
+                <br>
+                <h2>Integrantes</h2>
+                <BR>
+          <ul>
+            <li>Victor Sanchez - Fundador - Dirección e investigación</li>
+            <li>Nelly Villalobos - Cofundadora - Contabilidad y Gestión</li>
+            <li>Yael Hernández - Cofundador - RRHH</li>
+            <li>Jorge Ortega - Cofundador - Tecnología</li>
+            <li>Ortiz Espinosa - Colaborador - Marketing</li>
+            <li>Jamil Benavidez - Colaborador - Tecnología</li>
+          </ul>
+            </p>
+            <br>
+
+            <h2>¿Por qué Spark Safe Systems?</h2>
+            <br>
+          <p>"Spark Safe Systems" no es solo un nombre, es una promesa de innovación y seguridad en la protección de nuestros valiosos ecosistemas terrestres. La chispa de la creatividad y la tecnología se une con el compromiso de salvaguardar la naturaleza, creando sistemas que no solo detectan y combaten incendios forestales, sino que también previenen su ocurrencia a través de la gestión inteligente del entorno.
+            Nuestra empresa se enorgullece de ser pionera en el uso de tecnologías de vanguardia para la conservación ambiental. Con cada sistema que diseñamos, buscamos equilibrar la necesidad humana de progreso con la responsabilidad de preservar la biodiversidad. En "Spark Safe Systems", cada proyecto es un paso hacia un futuro más sostenible, donde la tecnología y el medio ambiente coexisten en armonía.
+            Creemos firmemente que la clave para un planeta más saludable y seguro reside en la innovación consciente y el desarrollo sostenible. Por eso, "Spark Safe Systems" no es solo nuestro nombre; es nuestra visión, nuestra misión y nuestro compromiso con el mundo.
+        </p>
+          
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <div class="company-info">
+            <div class="text-info">
+                <h2>Spark Safe Systems</h2>
+                <p>Conoce nuestro centro de ayuda</p>
+            </div>
+                
+                <!-- Bloque de "Contactanos" -->
+                <div class="team-member">
+                    <h3>Contactanos</h3>
+                    <p>Email: contact.sparksystems@gmail.com</p>
+                    <p><a href="https://www.instagram.com/sprk.sys/">Instagram</a></p>
+                    <p>Estamos atentos a tus comentarios</p>
+                </div>
+            
+            <!-- Bloque de "Compañia" -->
+            <img src="img/logov.jpeg" alt="Logo de SparkSafeSystems">
+
+        </div>
+    </div>
+
+
+    <script>
+        const images = document.querySelectorAll('.image');
+        let currentIndex = 0;
+        let intervalId;
+
+        function autoRotate() {
+            images[currentIndex].style.transform = 'scale(1)';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.transform = 'scale(1.1)';
+        }
+
+        function stopRotation() {
+            clearInterval(intervalId);
+        }
+
+        images.forEach((image, index) => {
+            image.style.setProperty('--i', index);
+            image.addEventListener('click', () => {
+                images[currentIndex].style.transform = 'scale(1)';
+                currentIndex = index;
+                images[currentIndex].style.transform = 'scale(1.1)';
+                stopRotation();
+            });
+        });
+
+        intervalId = setInterval(autoRotate, 3000); // Cambia de imagen cada 3 segundos (ajusta según tus preferencias)
+    </script>
+
+    <script>
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        if (window.scrollY > 50) {
+            header.classList.add('sticky');
+        } else {
+            header.classList.remove('sticky');
+        }
+    });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typyingEffect = new Typed(".multiText",{
+          strings : ["SEGURIDAD ", "INNOVACION", "TECNOLOGIA", "SOSTENIBILIDAD","ESPERANZA"],
+          loop : true,
+          typeSpeed : 100,
+          backSpeed : 100,
+          backDelay : 3000 
+        })
+      </script>
+
+</body>
+</html>
