@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SparkSafeSystems</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="nosotros.css" rel="stylesheet">
+    <style>
+        .fixed-nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 10;
+            transition: background-color 0.3s, backdrop-filter 0.3s;
+        }
+
+        .blurred-nav {
+            background-color: rgba(255, 255, 255, 0.09);
+            backdrop-filter: blur(21px);
+        }
+
+        .bg-blur {
+            backdrop-filter: blur(4px);
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        .min-h-screen {
+            min-height: 100vh;
+        }
+
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+        }
+
+        .no-bg {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .no-bg:hover {
+            transform: scale(1.05);
+        }
+
+        .img-fixed-size {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .integrantes-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .integrante-item {
+            width: 45%;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .integrante-item:hover {
+            transform: scale(1.05);
+        }
+
+        .integrante-item p {
+            margin: 0;
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <link rel="shortcut icon" href="img/fondont.png" type="image/x-icon" />
+</head>
+
+<body class="overflow-x-hidden bg-[#212828] flex flex-col min-h-screen">
+    <nav id="navbar" class="flex justify-between py-5 text-white fixed-nav px-4 md:px-10">
+        <a href="/">
+            <div class="text-3xl md:text-5xl">SS</div>
+        </a>
+        <div class="flex gap-4 md:gap-10 text-xl md:text-2xl cursor-pointer">
+            <a href="nosotros.html">
+                <div>Quienes somos?</div>
+            </a>
+            <a href="productos.html">
+                <div>Productos</div>
+            </a>
+        </div>
+    </nav>
+
+    <section class="container mt-24">
+        <div class="row mt-5 justify-content-center align-items-center">
+            <div class="col-md-6 mb-5" data-aos="fade-up">
+                <div class="no-bg text-white rounded">
+                    <h2 class="text-3xl font-bold mb-4">Orígenes</h2>
+                    <p>Spark Safe Systems se fundó con el propósito de proteger y preservar los ecosistemas terrestres.
+                        Con un equipo de expertos en ecología, ingeniería y ciencia de datos, la empresa se dedica a
+                        diseñar sistemas avanzados de monitoreo ambiental, análisis de datos y automatización para
+                        garantizar que los ecosistemas puedan florecer. La empresa se destaca por su compromiso con la
+                        innovación y la sostenibilidad, desarrollando soluciones tecnológicas que salvaguarden la
+                        biodiversidad y promuevan un futuro más armonioso para todas las formas de vida.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5 text-center" data-aos="fade-up">
+                <img src="img/tecnologia-verde.png" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center">
+            <div class="col-md-6 mb-5 text-center" data-aos="fade-up">
+                <img src="https://via.placeholder.com/300" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+            <div class="col-md-6 mb-5" data-aos="fade-up">
+                <div class="no-bg text-white rounded">
+                    <h2 class="text-3xl font-bold mb-4">Misión</h2>
+                    <p>Diseñar y fabricar dispositivos que brinde una respuesta rápida y efectiva ante emergencias
+                        causadas por incendios en el hogar. Nos esforzamos por crear un ente inteligente y adaptable que
+                        pueda detectar y extinguir incendios de manera autónoma, proporcionando así una primera línea de
+                        defensa para las familias y comunidades.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center align-items-center">
+            <div class="col-md-6 mb-5" data-aos="fade-up">
+                <div class="no-bg text-white rounded">
+                    <h2 class="text-3xl font-bold mb-4">Visión</h2>
+                    <p>Crear un dispositivo fácil de usar para cualquier persona, permitiendo así que las familias puedan
+                        intervenir rápidamente ante una emergencia en su hogar y mantenerse a salvo. Nos esforzamos por
+                        desarrollar tecnología accesible, confiable y segura, y que sobre todo brinde tranquilidad a las
+                        personas.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-5 text-center" data-aos="fade-up">
+                <img src="https://via.placeholder.com/300" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 mb-5" data-aos="fade-up">
+                <div class="no-bg text-white rounded">
+                    <h2 class="text-3xl font-bold mb-4">Integrantes</h2>
+                    <div class="integrantes-list">
+                        <div class="integrante-item">
+                            <p>Victor Sanchez</p>
+                            <p>- Fundador - Dirección e investigación</p>
+                        </div>
+                        <div class="integrante-item">
+                            <p>Nelly Villalobos</p>
+                            <p>- Cofundadora - Contabilidad y Gestión</p>
+                        </div>
+                        <div class="integrante-item">
+                            <p>Yael Hernández</p>
+                            <p>- Cofundador - RRHH</p>
+                        </div>
+                        <div class="integrante-item">
+                            <p>Jorge Ortega</p>
+                            <p>- Cofundador - Tecnología</p>
+                        </div>
+                        <div class="integrante-item">
+                            <p>Ortiz Espinosa</p>
+                            <p>- Colaborador - Marketing</p>
+                        </div>
+                        <div class="integrante-item">
+                            <p>Jamil Benavidez</p>
+                            <p>- Colaborador - Tecnología</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-md-4 mb-5 text-center" data-aos="fade-up">
+                <img src="https://via.placeholder.com/300" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+            <div class="col-md-4 mb-5 text-center" data-aos="fade-up">
+                <img src="https://via.placeholder.com/300" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+            <div class="col-md-4 mb-5 text-center" data-aos="fade-up">
+                <img src="https://via.placeholder.com/300" class="img-fluid img-fixed-size" alt="Placeholder">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-[#3E4949] text-white py-6 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h4 class="text-2xl font-bold">Spark Safe Systems</h4>
+                    <p class="text-xl">Protegiendo el futuro, hoy.</p>
+                  </div>
+                  <div class="flex flex-col md:flex-row gap-4 md:gap-10">
+                    <div>
+                      <h5 class="text-xl font-bold">Contacto</h5>
+                      <a href="https://www.instagram.com/sprk.sys/">
+                        <p class="text-lg">Instagram</p>
+                      </a>
+                      <p class="text-lg">Correo: contact.sparksystems@gmail.com</p>
+                      <p class="text-lg">Teléfono: +123 456 7890</p>
+                      <p class="text-lg">Estamos atentos a tus comentarios</p>
+                    </div>
+                    <img src="img/logov.jpeg" class="h-20 w-20 md:h-40 md:w-40" />
+                  </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+
+        window.addEventListener('scroll', function () {
+            var navbar = document.getElementById('navbar');
+            if (window.scrollY > 0) {
+                navbar.classList.add('blurred-nav');
+            } else {
+                navbar.classList.remove('blurred-nav');
+            }
+        });
+    </script>
+</body>
+
+</html>
